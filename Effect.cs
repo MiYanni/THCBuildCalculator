@@ -12,8 +12,8 @@ namespace THCBuildCalculator
 
         public string ValueUnit { get; set; }
 
-        public int InitialValue { get; set; }
+        public double InitialValue { get; set; }
 
-        public int IncrementalValue { get; set; }
+        public double IncrementalValue { get; set; }
     }
 }
