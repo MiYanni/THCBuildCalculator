@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.Composition;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
+using System.Xml.Serialization;
 using Cinch;
 using MEFedMVVM.ViewModelLocator;
 
@@ -107,6 +109,24 @@ namespace THCBuildCalculator
 
             EnableControls = true;
         }
+
+        //private static Upgrade ReadConnectionSettings()
+        //{
+        //    var serializer = new XmlSerializer(typeof(Upgrade));
+        //    using (var reader = new StreamReader(SettingsFilePath))
+        //    {
+        //        return (Upgrade)serializer.Deserialize(reader);
+        //    }
+        //}
+
+        //private static void WriteConnectionSettings(Upgrade settings)
+        //{
+        //    var serializer = new XmlSerializer(typeof(Upgrade));
+        //    using (var writer = new StreamWriter(SettingsFilePath))
+        //    {
+        //        serializer.Serialize(writer, settings);
+        //    }
+        //}
 
         //private bool ConnectToServer()
         //{

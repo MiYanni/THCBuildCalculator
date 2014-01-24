@@ -77,6 +77,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Effect.cs" />
+    <Compile Include="InitialUpgradeList.cs" />
+    <Compile Include="Upgrade.cs" />
+    <Compile Include="UpgradeList.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

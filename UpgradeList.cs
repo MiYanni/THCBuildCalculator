@@ -5,7 +5,9 @@ using System.Text;
 
 namespace THCBuildCalculator
 {
-    internal sealed class MainWindowViewModelDesignTime : MainWindowViewModel
+    [Serializable]
+    public sealed class UpgradeList
     {
+        public List<Upgrade> Upgrades { get; set; }
     }
 }
